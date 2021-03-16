@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            margin: 10px;
+            padding: 10px;
+            overflow: hidden;
+            background-image: url("https://th.bing.com/th/id/Rca284ac7d84babab71e6a948feba81c1?rik=4Ch6BJ8txRnf3Q&riu=http%3a%2f%2fazmind.com%2fwp-content%2fuploads%2f2012%2f09%2fcontact-form-step1-background.jpg&ehk=fznjOJuAJX7l8h16BQe8FW%2f98i2xlLxEGDSdSDO0wFo%3d&risl=&pid=ImgRaw");
+        }
+
+        div {
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        input[type=text]
+             {
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 98%;
+            padding: 12px;
+            border: 1px solid rgb(170, 165, 165);
+            border-radius: 4px;
+        }
+
+        input[type=button] {
+            font: 17px;
+            width: auto;
+            float: right;
+            cursor: pointer;
+            padding: 7px;
+            margin-top: 10px;
+        }
+        select{
+            font-size: 17px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid rgb(170, 165, 165);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <input type="text" id="txtName" placeholder="Digite seu nome:" />
+        </div>
+        <div>
+            <input type="text" id="txtAge" placeholder="Digite sua idade:" />
+        </div>
+        <div>
+            <input type="text" id="txtEmail" placeholder="Digite seu e-mail:" />
+        </div>
+        <div>
+            <input type="text" id="txtPhone" placeholder="Digite seu número de telefone:">
+        </div>
+        <div>
+            <select id="selCity">
+                <option selected value=""> Escolha sua cidade </option>
+                <option value="Jaraguá">Jaraguá do Sul</option>
+                <option value="Guaramirim">Guaramirim</option>
+                <option value="Massaranduba">Massaranduba</option>
+                <option value="Corupá">Corupá</option>
+                <option value="Schroeder">Schroeder</option>
+            </select>
+        </div>
+        <div>
+            <select id="selGender">
+                <option selected value=""> Gênero </option>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+                <option value="other">Outro</option>
+        </div>
+        <div>
+            <input type="button" id="bt" value="Enviar">
+        </div>
+    </div>
+</body>
+
+</html>
